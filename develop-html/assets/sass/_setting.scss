@@ -1,0 +1,76 @@
+// ===============================================================================
+// Setting
+// ===============================================================================
+// ************* Viewport *************
+// SP切り替えのブレイクポイント
+$spViewport:768px; //関数から読み込まれます。
+
+// PC・SP時にベースとなるフォントサイズ
+$fontPC:16; //base.cssでbodyに設定されます。関数からも読み込まれます。
+$fontSP:14; //base.cssでbodyに設定されます。関数からも読み込まれます。
+
+// その他基本的な値
+$baseLineHeight:1.5; //base.scssでbodyに設定されます。
+$baseFontColor:#000; //base.scssでbodyに設定されます。
+
+// *************************************************
+//Mixin
+// *************************************************
+//クリアフィックス
+@mixin clearfix{
+  &::after{
+    content:""; display:block; clear:both;
+  }
+}
+
+//ホバー時の透過処理
+@mixin hoverLink($value:.8){
+  &:hover{
+    opacity:$value;
+  }
+}
+
+//ホバー時の透過処理（テキストの下線の打消し有）
+@mixin hoverLinkT($value:.8){
+  &:hover{
+    opacity:$value;
+    text-decoration:none;
+  }
+}
+
+//メディアクエリー（PC表示のみ）
+@mixin pc{
+  @media screen and (min-width:$spViewport+1){
+    @content;
+  }
+}
+
+//メディアクエリー（SP表示）
+@mixin sp{
+  @media screen and (max-width:$spViewport){
+    @content;
+  }
+}
+
+// *************************************************
+//Function
+// *************************************************
+//入力した引数で、フォントサイズをrem指定（PC用）
+@function f($value){
+  @return round(($value/$fontPC)*1000)/1000+rem;
+}
+
+//入力した引数で、フォントサイズをrem指定（SP用）
+@function fs($value){
+  @return round(($value/2/$fontSP)*1000)/1000+rem;
+}
+
+//デザインデータからLineHeightを計算する場合に使用
+@function lh($lineHeight,$fontSize){
+  @return round($lineHeight/$fontSize*100)/100;
+};
+
+//デザインデータの幅をもとに、vw値を算出する場合に使用（640の部分はデザインデータによって変動）
+@function vw-sp($value){
+  @return round(($value/640)*10000)/100+vw;
+}
