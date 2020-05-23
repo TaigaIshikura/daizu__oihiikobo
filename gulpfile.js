@@ -40,16 +40,16 @@ var config = {
   "path" : {
     "sassCompile" : develop+"assets/sass/**/*.scss",
     "sassModule" : develop+"assets/sass/**/_*.scss",
-    "afterCompileSass" : public+"assets/css/",
+    "afterCompileSass" : public+"assets/styles/",
     "htmlWatchDir" : [develop+"**/*.html", "!"+develop+"**/* - Copy.html"],
     "htmlCompileDir" : [develop+"**/*.html", "!"+develop+"**/* - Copy.html", "!"+develop+"**/_*.html"],
     "afterCompileHTML": public,
-    "cssDir":[develop+'assets/css/**/*.css', "!"+develop+'assets/css/**/* - Copy.css'],
-    "cssCompileDir": public+"assets/css/",
+    "cssDir":[develop+'assets/styles/**/*.css', "!"+develop+'assets/styles/**/* - Copy.css'],
+    "cssCompileDir": public+"assets/styles/",
     "jsDir": [develop+'assets/js/**/*.js', "!"+develop+'assets/js/**/* - Copy.js'],
     "jsCompileDir": public+"assets/js/",
-    "imgDir": [develop+"assets/img/**/*.{png,jpg,svg}", "!"+develop+'assets/img/**/* - Copy.{png,jpg,svg}'],
-    "imgCompileDir": public+"assets/img/"
+    "imgDir": [develop+"assets/images/**/*.{png,jpg,svg}", "!"+develop+'assets/images/**/* - Copy.{png,jpg,svg}'],
+    "imgCompileDir": public+"assets/images/"
    }
 }
 

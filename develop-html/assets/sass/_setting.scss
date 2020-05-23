@@ -57,7 +57,7 @@ $baseFontColor:#000; //base.scssでbodyに設定されます。
 // *************************************************
 //入力した引数で、フォントサイズをrem指定（PC用）
 @function f($value){
-  @return round(($value/$fontPC)*1000)/1000+rem;
+  @return $value+px;
 }
 
 //入力した引数で、フォントサイズをrem指定（SP用）
