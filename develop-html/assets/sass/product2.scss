@@ -5,10 +5,10 @@
   #product2{
     .wrap{
       width: 950px;
-      padding:50px 0 60px;
+      padding:55px 0 60px;
     }
     .title02{
-      margin-bottom: 50px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -18,14 +18,14 @@
 }
 
 .product2-sec-1{
-
+  padding-bottom: 30px;
   .blks-1{
     .heading{
       height: 200px;
       position: relative;
       &__main{
         position: absolute;
-        top:5px; left:5px;
+        top:10px; left:6px;
       }
       &::after{
         position:absolute;
@@ -37,17 +37,17 @@
       }
     }
     .image{
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
     .col2{
-      margin:0 10px 50px;
+      margin:0 10px 22px;
       display: flex;
       justify-content: space-between;
       &__lt{
         width: 479px;
       }
       &__rt{
-        width: 441px;
+        width: 439px;
         position: relative;
       }
       .image-2{
@@ -63,18 +63,18 @@
         background: #401f00;
         text-align: center;
         color:#fff;
-        padding:10px;
-        margin-bottom: 14px;
+        padding:8px 10px;
+        margin-bottom: 12px;
       }
       dd{
         background: #fff;
-        padding:10px;
+        padding:20px 10px;
+        letter-spacing: .05em;
         text-align: center;
         span{
           font-size: f(16);
-          font-weight: normal;
           vertical-align: middle;
-          margin-left: 10px;
+          margin-left: 17px;
         }
         + dt{
           margin-top: 20px;
@@ -85,7 +85,8 @@
       font-size: f(22);
       line-height: lh(34,22);
       font-weight: bold;
-      padding:0 10px;
+      padding:0 16px;
+      letter-spacing: .065em;
     }
   }
   @include sp{
@@ -101,9 +102,9 @@
     text-align: center;
     width: 883px;
     margin:0 auto;
-    padding:40px 0;
+    padding:31px 0;
     .heading{
-      margin-bottom: 40px;
+      margin-bottom: 31px;
     }
     .list{
       display:inline-block;
@@ -111,29 +112,40 @@
       color:#fff;
       font-size: f(24);
       font-weight: bold;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
       li{
         position: relative;
-        padding-left: 20px;
-        &:not(:last-child){
-          margin-bottom: 40px;
+        padding-left: 28px;
+        &:nth-child(1){
+          margin-bottom: 30px;
+        }
+        &:nth-child(2){
+          margin-bottom: 15px;
+        }
+        &:nth-child(3){
+          margin-bottom: 25px;
+        }
+        &:nth-child(4){
+          padding-left: 41px;
         }
         &::before{
           position:absolute;
           content:"";
           display:block;
-          top:10px; left:0;
+          top:20px; left:0;
           background: #fff;
           width: 17px; height: 17px;
         }
       }
       img{
         vertical-align: middle;
+        margin-right: 8px;
       }
       p{
         vertical-align: middle;
+        letter-spacing: .075em;
         &:nth-child(2){
-          margin-top: 10px;
+          margin: 10px 0 0 6px;
           font-size: f(27);
         }
       }
@@ -142,7 +154,8 @@
       background: #e3cbb1;
       font-size: f(27);
       font-weight: bold;
-      padding:16px 10px;
+      padding:17px 10px;
+      letter-spacing: .075em;
     }
   }
   @include sp{
@@ -152,7 +165,7 @@
 
 .product2-sec-3{
   position: relative;
-  padding:30px 0 80px;
+  padding:18px 0 41px;
   &::after{
     position:absolute;
     content:"";
@@ -164,16 +177,17 @@
   .blks-1{
     text-align: center;
     .heading{
-      margin-bottom: 40px;
+      margin-bottom: 26px;
     }
     .image{
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .text{
       font-size: f(24);
       font-weight: bold;
+      letter-spacing: .05em;
       p:not(:last-child){
-        margin-bottom: 20px;
+        margin-bottom: 26px;
       }
     }
   }
@@ -184,7 +198,7 @@
 
 .product2-sec-4{
   position: relative;
-  padding:30px 0 80px;
+  padding:27px 0 68px;
   &::after{
     position:absolute;
     content:"";
@@ -195,22 +209,23 @@
   }
   .blks-1{
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
     .heading{
       width: 405px;
-      margin:0 36px 40px auto;
+      margin:0 36px 30px auto;
     }
     .text{
-      width: 310px;
-      margin:0 36px 0 auto;
+      width: 320px;
+      margin:0 38px 0 auto;
       text-align: justify;
       font-size: f(22);
       line-height: lh(32,22);
       font-weight: bold;
+      letter-spacing: .02em;
     }
     .image{
       position: absolute;
-      top:30px; left:50px;
+      top:49px; left:20px;
     }
   }
   .blks-2{
@@ -220,14 +235,14 @@
       flex-wrap: wrap;
       justify-content:space-between;
       li{
-        margin-top:30px;
+        margin-top:27px;
         &:nth-child(-n+3){
           margin-top: 0;
         }
       }
     }
     .image{
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
     .text{
       text-align: center;
@@ -239,7 +254,7 @@
 }
 
 .product2-sec-5{
-  padding:30px 0;
+  padding:36px 0 38px;
   position: relative;
   &::after{
     position:absolute;
@@ -259,6 +274,7 @@
       }
       &__rt{
         width: 427px;
+        margin-top: 4px;
       }
     }
     .image-list{
@@ -266,29 +282,30 @@
       flex-wrap: wrap;
       justify-content: space-between;
       li{
-        margin-top: 20px;
+        margin-top: 17px;
         &:nth-child(-n+2){
           margin-top: 0;
         }
       }
     }
     .heading{
-      margin-bottom: 20px;
+      margin-bottom: -20px;
     }
     .text{
       p{
         &:not(:last-child){
-          margin-bottom: 30px;
+          margin-bottom: 22px;
         }
         img,span{
           display: block;
         }
         img{
-          margin-bottom: 20px;
+          margin-bottom: 13px;
         }
         span{
           font-size: f(22);
           line-height: lh(32,22);
+          letter-spacing: .05em;
           font-weight: bold;
         }
       }
@@ -300,54 +317,68 @@
 }
 
 .product2-sec-6{
-  padding:30px 0;
+  padding:30px 0 44px;
   .blks-1{
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     .heading{
       width: 498px;
-      margin:0 40px 20px auto;
+      margin:0 36px -25px auto;
     }
     .col2{
       display: flex;
       justify-content: space-between;
       width: 354px;
-      margin:0 40px 20px auto;
+      margin:0 40px 30px auto;
       &__lt{
         width: 140px;
       }
       &__rt{
-        width: 178px;
+        width: 185px;
       }
     }
     .text{
       font-size: f(22);
       line-height: lh(32,22);
+      text-align: justify;
+      letter-spacing: .03em;
       font-weight: bold;
     }
     .text-2{
       margin:0 40px 0 auto;
-      width: 375px;
+      width: 390px;
       h5{
-        margin-bottom: 30px;
+        margin-bottom: 12px;
       }
       p{
         font-size: f(22);
         line-height: lh(32,22);
         font-weight: bold;
+        letter-spacing: .05em;
       }
     }
     .image-2{
       position: absolute;
-      top:60px; left:20px;
+      top:63px; left:16px;
     }
   }
   .blks-2{
     .image-list{
-      margin:0 20px 0 25px;
+      margin:0 28px 0 39px;
       display:flex;
       align-items: center;
       justify-content: space-between;
+      li{
+        &:nth-child(2){
+          padding:0 0 10px 10px;
+        }
+        &:nth-child(3){
+          padding:12px 6px 0 0;
+        }
+        &:nth-child(5){
+          padding-bottom: 10px;
+        }
+      }
     }
   }
   @include sp{
