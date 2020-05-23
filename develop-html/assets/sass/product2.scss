@@ -5,7 +5,7 @@
   #product2{
     .wrap{
       width: 950px;
-      padding:50px 0 0;
+      padding:50px 0 60px;
     }
     .title02{
       margin-bottom: 50px;
@@ -18,7 +18,7 @@
 }
 
 .product2-sec-1{
-  margin-bottom: 40px;
+
   .blks-1{
     .heading{
       height: 200px;
@@ -97,7 +97,6 @@
   min-height: 576px;
   margin-left:-4px;
   background: url("../images/product2/bg02.png") no-repeat 0 0 / 100% 100%;
-  margin-bottom: 40px;
   .blks-1{
     text-align: center;
     width: 883px;
@@ -152,6 +151,16 @@
 }
 
 .product2-sec-3{
+  position: relative;
+  padding:30px 0 80px;
+  &::after{
+    position:absolute;
+    content:"";
+    display:block;
+    bottom:0; left:0;
+    height: 10px; width: 100%;
+    background: url("../images/product2/line01.png") repeat-x 0 0;
+  }
   .blks-1{
     text-align: center;
     .heading{
@@ -160,6 +169,13 @@
     .image{
       margin-bottom: 40px;
     }
+    .text{
+      font-size: f(24);
+      font-weight: bold;
+      p:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
   }
   @include sp{
     
@@ -167,8 +183,55 @@
 }
 
 .product2-sec-4{
+  position: relative;
+  padding:30px 0 80px;
+  &::after{
+    position:absolute;
+    content:"";
+    display:block;
+    bottom:0; left:0;
+    height: 10px; width: 100%;
+    background: url("../images/product2/line01.png") repeat-x 0 0;
+  }
   .blks-1{
-    
+    position: relative;
+    margin-bottom: 40px;
+    .heading{
+      width: 405px;
+      margin:0 36px 40px auto;
+    }
+    .text{
+      width: 310px;
+      margin:0 36px 0 auto;
+      text-align: justify;
+      font-size: f(22);
+      line-height: lh(32,22);
+      font-weight: bold;
+    }
+    .image{
+      position: absolute;
+      top:30px; left:50px;
+    }
+  }
+  .blks-2{
+    .list{
+      margin:0 18px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      li{
+        margin-top:30px;
+        &:nth-child(-n+3){
+          margin-top: 0;
+        }
+      }
+    }
+    .image{
+      margin-bottom: 20px;
+    }
+    .text{
+      text-align: center;
+    }
   }
   @include sp{
     
@@ -176,8 +239,60 @@
 }
 
 .product2-sec-5{
+  padding:30px 0;
+  position: relative;
+  &::after{
+    position:absolute;
+    content:"";
+    display:block;
+    bottom:0; left:0;
+    height: 10px; width: 100%;
+    background: url("../images/product2/line01.png") repeat-x 0 0;
+  }
   .blks-1{
-    
+    margin:0 14px;
+    .col2{
+      display: flex;
+      justify-content: space-between;
+      &__lt{
+        width: 460px;
+      }
+      &__rt{
+        width: 427px;
+      }
+    }
+    .image-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        margin-top: 20px;
+        &:nth-child(-n+2){
+          margin-top: 0;
+        }
+      }
+    }
+    .heading{
+      margin-bottom: 20px;
+    }
+    .text{
+      p{
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+        img,span{
+          display: block;
+        }
+        img{
+          margin-bottom: 20px;
+        }
+        span{
+          font-size: f(22);
+          line-height: lh(32,22);
+          font-weight: bold;
+        }
+      }
+    }
   }
   @include sp{
     
@@ -185,8 +300,55 @@
 }
 
 .product2-sec-6{
+  padding:30px 0;
   .blks-1{
-    
+    position: relative;
+    margin-bottom: 60px;
+    .heading{
+      width: 498px;
+      margin:0 40px 20px auto;
+    }
+    .col2{
+      display: flex;
+      justify-content: space-between;
+      width: 354px;
+      margin:0 40px 20px auto;
+      &__lt{
+        width: 140px;
+      }
+      &__rt{
+        width: 178px;
+      }
+    }
+    .text{
+      font-size: f(22);
+      line-height: lh(32,22);
+      font-weight: bold;
+    }
+    .text-2{
+      margin:0 40px 0 auto;
+      width: 375px;
+      h5{
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: f(22);
+        line-height: lh(32,22);
+        font-weight: bold;
+      }
+    }
+    .image-2{
+      position: absolute;
+      top:60px; left:20px;
+    }
+  }
+  .blks-2{
+    .image-list{
+      margin:0 20px 0 25px;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   @include sp{
     
