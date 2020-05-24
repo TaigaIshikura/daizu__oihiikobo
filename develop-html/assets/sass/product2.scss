@@ -172,7 +172,7 @@
     }
   }
   @include sp{
-    padding-bottom:vw-sp(30);
+    padding-bottom:vw-sp(44);
     .blks-1{
       .heading{
         height: vw-sp(214);
@@ -379,7 +379,69 @@
     }
   }
   @include sp{
-    
+    width:auto;
+    min-height: vw-sp(707);
+    margin-left:0;
+    background: url("../images/product2/bg02_sp.jpg") no-repeat 0 0 / 100% 100%;
+    .blks-1{
+      width:vw-sp(946);
+      padding:vw-sp(37) 0;
+      .heading{
+        margin-bottom:vw-sp(31);
+        img{
+          width: vw-sp(509);
+        }
+      }
+      .list{
+        font-size:vw-sp(30.93);
+        margin-bottom:vw-sp(30);
+        padding-right: vw-sp(20);
+        li{
+          padding-left:vw-sp(40);
+          &:nth-child(1){
+            margin-bottom:vw-sp(44);
+            img{
+              width: vw-sp(235);
+            }
+          }
+          &:nth-child(2){
+            margin-bottom:vw-sp(25);
+            img{
+              width: vw-sp(236);
+            }
+          }
+          &:nth-child(3){
+            margin-bottom:vw-sp(35);
+            img{
+              width: vw-sp(357);
+            }
+          }
+          &:nth-child(4){
+            padding-left:vw-sp(51);
+            img{
+              width: vw-sp(456);
+            }
+          }
+          &::before{
+            top:vw-sp(22);
+            width: vw-sp(22.5); height:vw-sp(22.5);
+          }
+        }
+        img{
+          margin-right:vw-sp(8);
+        }
+        p{
+          &:nth-child(2){
+            margin: vw-sp(10) 0 0 vw-sp(6);
+            font-size:vw-sp(34.79);
+          }
+        }
+      }
+      .text{
+        font-size: vw-sp(28.91);
+        padding:vw-sp(3) vw-sp(10);
+      }
+    }
   }
 }
 
@@ -438,7 +500,32 @@
     }
   }
   @include sp{
-    
+    padding:vw-sp(38) 0 vw-sp(100);
+    &::after{
+      height: vw-sp(11);
+      background: url("../images/product2/line01.png") repeat-x 0 0 / auto 100%;
+    }
+    .blks-1{
+      .heading{
+        margin-bottom: vw-sp(50);
+        img{
+          width: vw-sp(822);
+        }
+      }
+      .image{
+        margin-bottom: vw-sp(38);
+        img{
+          width: vw-sp(819);
+        }
+      }
+      .text{
+        font-size: vw-sp(32);
+        line-height: 1;
+        p:not(:last-child){
+          margin-bottom: vw-sp(16);
+        }
+      }
+    }
   }
 }
 
