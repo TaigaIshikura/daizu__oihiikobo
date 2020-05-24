@@ -793,7 +793,63 @@
     }
   }
   @include sp{
-    
+    padding:vw-sp(38) 0 vw-sp(58);
+    &::after{
+      height: vw-sp(11);
+      background: url("../images/product2/line01.png") repeat-x 0 0 / auto 100%;
+    }
+    .blks-1{
+      margin:0;
+      position: relative;
+      .col2{
+        display:block;
+        &__lt{
+          width:auto;
+        }
+        &__rt{
+          width: auto;
+          margin-top:0;
+        }
+      }
+      .image-list{
+        position: absolute;
+        top:0; left:vw-sp(14);
+        width: vw-sp(493);
+        li{
+          margin-top:vw-sp(18);
+          width: vw-sp(238);
+          &:nth-child(-n+2){
+            margin-top: 0;
+          }
+        }
+      }
+      .heading{
+        width: vw-sp(546);
+        margin:0 0 vw-sp(110) auto;
+        padding-top: vw-sp(140);
+      }
+      .text{
+        margin: 0 vw-sp(36);
+        p{
+          &:not(:last-child){
+            margin-bottom:vw-sp(40);
+          }
+          img{
+            margin-bottom:vw-sp(8);
+          }
+          span{
+            font-size: vw-sp(32);
+            line-height: lh(38.4,32);
+          }
+          &:nth-child(1){
+            img{width:vw-sp(273)}
+          }
+          &:nth-child(2){
+            img{width:vw-sp(272)}
+          }
+        }
+      }
+    }
   }
 }
 
