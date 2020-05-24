@@ -11,6 +11,13 @@
       margin-bottom: 18px;
     }
   }
+  @media screen and (min-width: 769px) {
+    #product2{
+      .sp-only{
+        display: none;
+      }
+    }
+  }
   @media screen and (min-width: 769px) and (max-width:1049px){
     #product2{
       .wrap{
@@ -19,6 +26,20 @@
       }
       .title02{
         margin-bottom: 18px;
+      }
+    }
+  }
+  @include sp{
+    #product2{
+      .pc-only{
+        display: none;
+      }
+      .wrap{
+        width:vw-sp(1020);
+        padding:vw-sp(57) 0 vw-sp(66);
+      }
+      .title02{
+        margin-bottom: vw-sp(50);
       }
     }
   }
@@ -61,11 +82,11 @@
         width: 439px;
         position: relative;
       }
-      .image-2{
-        background: url("../images/product2/photo02.jpg") no-repeat center center / cover;
-        position: absolute;
-        top:0; left:0; width: 100%; height: 100%;
-      }
+    }
+    .image-2{
+      background: url("../images/product2/photo02.jpg") no-repeat center center / cover;
+      position: absolute;
+      top:0; left:0; width: 100%; height: 100%;
     }
     .list{
       font-size: f(24);
@@ -107,6 +128,9 @@
         height:vw-pc(200);
         &__main{
           top:vw-pc(10); left:vw-pc(6);
+          img{
+            width: vw-pc(940);
+          }
         }
         &::after{
           height: vw-pc(10);
@@ -148,6 +172,78 @@
     }
   }
   @include sp{
+    padding-bottom:vw-sp(30);
+    .blks-1{
+      .heading{
+        height: vw-sp(214);
+        &__main{
+          top:vw-sp(11); left:vw-sp(9);
+          img{
+            width:vw-sp(1005);
+          }
+        }
+        &::after{
+          height: vw-sp(11);
+          background: url("../images/product2/line01.png") repeat-x 0 0 / auto 100%;
+        }
+      }
+      .image{
+        margin-bottom:vw-sp(40);
+      }
+      .col2{
+        margin:0 vw-sp(26) vw-sp(46);
+        display:block;
+        &__lt{
+          width:auto;
+        }
+        &__rt{
+          display: none;
+        }
+      }
+      .image-2{
+        background: url("../images/product2/photo02.jpg") no-repeat center center / cover;
+        position: absolute;
+        top:0; left:0; width: 100%; height: 100%;
+      }
+      .list{
+        font-size:vw-sp(48.4);
+        dt{
+          padding:vw-sp(16) vw-sp(10);
+          margin-bottom: vw-sp(12);
+        }
+        dd{
+          padding:vw-sp(32) vw-sp(10);
+          span{
+            font-size:vw-sp(32.27);
+            margin-left:vw-sp(17);
+          }
+          + dt{
+            margin-top:vw-sp(32);
+          }
+        }
+      }
+      .text{
+        font-size: vw-sp(32);
+        line-height: lh(38.4,32); 
+        margin:0 vw-sp(28);
+        padding:0;
+        letter-spacing: 0;
+        position: relative;
+        min-height:vw-sp(232);
+        p{
+          width: vw-sp(492);
+        }
+        &::after{
+          position:absolute;
+          content:"";
+          display:block;
+          top:0; right:0;
+          width: vw-sp(414);
+          height: vw-sp(232);
+          background: url("../images/product2/photo02.jpg") no-repeat center center / cover;
+        }
+      }
+    }
   }
 }
 
