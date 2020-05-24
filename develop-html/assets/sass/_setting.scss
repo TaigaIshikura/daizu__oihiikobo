@@ -71,6 +71,11 @@ $baseFontColor:#000; //base.scssでbodyに設定されます。
 };
 
 //デザインデータの幅をもとに、vw値を算出する場合に使用（640の部分はデザインデータによって変動）
+@function vw-pc($value){
+  @return round(($value/1050)*10000)/100+vw;
+}
+
+//デザインデータの幅をもとに、vw値を算出する場合に使用（640の部分はデザインデータによって変動）
 @function vw-sp($value){
-  @return round(($value/640)*10000)/100+vw;
+  @return round(($value/1080)*10000)/100+vw;
 }
