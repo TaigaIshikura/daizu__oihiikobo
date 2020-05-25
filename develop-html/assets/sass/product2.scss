@@ -101,7 +101,6 @@
       dd{
         background: #fff;
         padding:20px 10px;
-        letter-spacing: .05em;
         text-align: center;
         span{
           font-size: f(16);
@@ -117,7 +116,7 @@
       font-size: f(22);
       line-height: lh(34,22);
       font-weight: bold;
-      padding:0 16px;
+      padding:0 40px 0 16px;
       letter-spacing: .065em;
     }
   }
@@ -167,7 +166,7 @@
       }
       .text{
         font-size: vw-pc(22);
-        padding:0 vw-pc(16);
+        padding:0 vw-pc(40) 0 vw-pc(16);
       }
     }
   }
